@@ -3,7 +3,7 @@ const { Container, Token } = require("typedi");
 const NodeCGToken = new Token("NodeCG");
 
 function getNodeCG(container) {
-	container.get(NodeCGToken);
+	return container.get(NodeCGToken);
 }
 
 function useContainer(container, nodecg) {
